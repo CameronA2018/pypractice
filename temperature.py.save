@@ -6,7 +6,7 @@ Celcius
 
 Fahrenheit
 
-Abskel
+AbsKel
 
 
 ''')
@@ -17,17 +17,11 @@ measuresto = raw_input('Please supply the system of measure you are converting t
 convertmeasures = raw_input('Please supply the temperature in '+measuresfrom+' that you wish to convert to '+measuresto+': ')
 
 CelFah = measuresfrom == "Celcius" and measuresto == "Fahrenheit"
-FahCel = measuresfrom == "Fahrenheit" and measuresto == "Celcius"
-CelAbskel = measuresfrom == "Celcius" and measuresto == "Abskel"
+FahCel = measuresfrom
 
 if(CelFah == True):
 	CelFah = (int(convertmeasures)*1.8)+32
 	print (CelFah)
 elif(FahCel == True):
-	FahCel = (int(convertmeasures)-32)*.5556
+	FahCel = (int(convertmeasures)*.5556)-32
 	print (FahCel)
-elif(CelAbskel == True):
-	CelAbskel = (int(convertmeasures)+273.15
-	print (CelAbskel)
-else:
-	print ('This system of measure is unknown')
