@@ -13,6 +13,7 @@ print (num_s)
 num_combined = len(combined)
 print (num_combined)
 
+print ("HELLO")
 halfway = len(s)/2
 print (s[halfway])
 print (s[0])
